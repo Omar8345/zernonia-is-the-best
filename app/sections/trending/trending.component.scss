@@ -1,0 +1,22 @@
+.section-title {
+  position: relative;
+
+  &:after, &:before {
+    content: "";
+    height: 10px;
+    background: #214B6B;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+  }
+
+  &:after {
+    width: 127px;
+    transform: translate(5%, -50%);
+  }
+
+  &:before {
+    width: 127px;
+    transform: translate(-105%, -50%);
+  }
+}
